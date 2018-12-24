@@ -1,0 +1,18 @@
+.codeblock {
+  padding: 2vh 3vw;
+  border: 2px solid #990000;
+  border-radius: 25px;
+  margin: 3vh 0;
+}
+
+.codeblock h3 {
+  margin: 0 0 1vh 0;
+}
+
+code {
+  font-size: 16px;
+}
+
+.keyword {
+  color: #990000;
+}

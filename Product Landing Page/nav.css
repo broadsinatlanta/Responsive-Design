@@ -1,0 +1,77 @@
+nav {
+  position: fixed;
+  display: flex;
+  padding: 2vh 1vw;
+  background-color: white;
+  width: 100%;
+  height: 3vh;
+  font-family: Baloo;
+  align-items: center;
+  border-radius: 4px;
+  min-height: 35px;
+}
+
+nav .logo {
+  margin-right: auto;
+  margin-left: 1vw;
+  color: #196CE9;
+  font-size: 25px;
+}
+
+nav .links {
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
+.links a {
+  position: relative;
+  color: #196CE9;
+  text-decoration: none;
+  margin: 1vw;
+}
+
+.links a:hover {
+  color: #196CE9;
+}
+
+.links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #196CE9;
+  transform: scaleX(0);
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.links a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#bolt {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    color: #15c7db;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#header-img {
+  height: 30px;
+  width: auto;
+}

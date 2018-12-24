@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>FCC Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Fast & Furious Fan Level Form</h1>
+      <p id="description">Simple example survey form made with html and plain css.</p>
+    </header>
+
+    <main>
+      <form id="survey-form" action="#">
+
+        <div class="field">
+          <label for="name" id="name-label" class="title">Name:</label>
+          <input type="text" id="name" placeholder="Dom Toretto" name="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email" id="email-label" class="title">Email:</label>
+            <input type="email" id="email" placeholder="brianOConnor@fast.com" name="email" required>
+        </div>
+
+        <div class="field">
+          <label for="number" id="number-label" class="title">Number of Movies Seen:</label>
+            <input type="number" id="number" placeholder="8" min=1 max=8 name="number">
+        </div>
+
+        <div class="field">
+          <label for="fav-movie" class="title">Favorite Movie:</label>
+            <select id="dropdown" name="fav-movie">
+              <option value="None">Select...</option>
+              <option value="1">The Fast and the Furious</option>
+              <option value="2">2 Fast 2 Furious</option>
+              <option value="3">The Fast and the Furious: Tokyo Drift</option>
+              <option value="4">Fast & Furious</option>
+              <option value="5">Fast 5</option>
+              <option value="6">Fast & Furious 6</option>
+              <option value="7">Furious 7</option>
+              <option value="8">The Fate of the Furious</option>
+            </select>
+        </div>
+
+        <div class="field">
+          <label class="title">Which Film Are You More Excited For?</label>
+          <fieldset>
+            <label for="excited"><input type="radio" name="excited" value="Hobbs_Shaw">Hobbs & Shaw</label>
+            <label for="excited"><input type="radio" name="excited" value="Fast_9">Fast & Furious 9</label>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <label class="title">What You Love About The Films:</label>
+          <fieldset>
+            <label for="enjoy"><input type="checkbox" name="enjoy" value="cars">Cars</label>
+            <label for="enjoy"><input type="checkbox" name="enjoy" value="cast">Cast</label>
+            <label for="enjoy"><input type="checkbox" name="enjoy" value="plot">Plot</label>
+            <label for="enjoy"><input type="checkbox" name="enjoy" value="action">Set Pieces</label>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <label class="title">Additional Comments</label>
+          <textarea name="name" rows="5" cols="100"></textarea>
+        </div>
+
+        <div class="field">
+          <input type="submit" id="submit">
+        </div>
+      </form>
+
+    </main>
+    <footer>
+      Made By Atsushi Toda
+    </footer>
+  </div>
+
+</body>
+</html>

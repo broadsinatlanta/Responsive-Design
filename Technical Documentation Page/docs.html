@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="codeblock.css">
+
+  <title>Technical Documentation Page</title>
+</head>
+<body>
+
+  <nav id="navbar">
+    <div id="border"></div>
+    <header>
+      <!-- <h3 id="wide">Python Docs</h3> -->
+      <h3 id="slim">PyDocs</h3>
+    </header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+
+    <a href="#Numbers" class="nav-link">Numbers</a>
+
+    <a href="#Strings" class="nav-link">Strings</a>
+
+    <a href="#Lists" class="nav-link">Lists</a>
+
+    <a href="#Dictionaries" class="nav-link">Dictionaries</a>
+
+    <a href="#Booleans" class="nav-link">Booleans</a>
+
+    <a href="#NoneTypes" class="nav-link">NoneTypes</a>
+  </nav>
+
+  <main id="main-doc">
+    <header>
+      <h1>Python Data Types Documentation</h1>
+    </header>
+    <section class="main-section" id="Introduction">
+      <header>
+        <h1>Introduction</h1>
+      </header>
+
+      <h3>Basic Python Data Types:</h3>
+      <ul>
+        <li>Integer (int)</li>
+        <li>Float</li>
+        <li>String (str)</li>
+        <li>List</li>
+        <li>Dictionary (dict)</li>
+        <li>Booleans (bool)</li>
+        <li>NoneType</li>
+      </ul>
+
+      <p>Python stores data in assigned values named <span class="keyword">variables</span>. Each variable represents a part of data that, at its core, behaves and performs in line with one of the above <span class="keyword">data types</span>.</p>
+
+      <p>Each data type can be expected to adhere to its own rules and use cases, and are powerful tools to carry out logic in your code.</p>
+
+      <h3>Using Different Data Types In Your Code</h3>
+      <p>Though not exhaustive, the list above covers the vast majority of data types you will need to use at a <span class="keyword">medium to low </span>level. Python offers other data types, as well as the ability to create your own, but the concepts needed to understand them are gained through familiarity of the ones above.</p>
+
+      <div class="codeblock">
+        <h3>Assign A Variable To Data</h3>
+        <code>message = "Hello World!"</code><br><br>
+        <code>print(message)</code><br>
+        <code>Hello World! # prints out in console</code>
+      </div>
+
+      <h3>Quick Run through</h3>
+      <p><span class="keyword">Int</span> and <span class="keyword">float</span> data types are used to represent <span class="keyword">numbers</span> and can be used to carry out most mathematical functions. <span class="keyword">Int</span> represents a positive or negative <span class="keyword">whole number</span> while a  <span class="keyword">float</span> represents a positive or negative number with a <span class="keyword">decimal point</span> (note. A whole number with a x.0 decimal is still a float).</p>
+
+      <p>A <span class="keyword">string</span> represents a string of characters and are used to represent written data.</p>
+
+      <p><span class="keyword">Lists</span> and <span class="keyword">dicts</span> are used to store multiple variables or unassigned data in one <span class="keyword">reference</span> variable. Lists and dicts in essence exist to the same point but are referenced and <span class="keyword">indexed</span> in different ways. Lists are <span class="keyword">ordered</span>, while dicts use a <span class="keyword">key-value</span> system.</p>
+
+      <p><span class="keyword">Boolean</span> values exist as either <span class="keyword">true</span> or <span class="keyword">false</span>. Booleans are used, among others, to check conditions and assess process outcomes.</p>
+
+      <p><span class="keyword">NoneType</span> values are used to indicate <span class="keyword">null</span> values: values that exist but have no value (not a value of 0). NoneType values have a value of <span class="keyword">None</span>.</p>
+
+      <div class="codeblock">
+        <h3>Checking The Type Of A Value</h3>
+        <code>print(type(message))</code> <br>
+        <code>&lt;class 'str'&gt; # prints out in console</code>
+      </div>
+
+      <hr>
+    </section>
+
+    <section class="main-section" id="Numbers">
+      <header>
+        <h1>Numbers</h1>
+      </header>
+
+      <h3>Two Types</h3>
+      <p>As stated in the introduction, <span class="keyword">int variables are whole numbers</span> and <span class="keyword">float variables are numbers with decimal points</span>. Both float and int can be either positive or negative.</p>
+
+      <div class="codeblock">
+        <h3>Numbers In Python</h3>
+        <code>x = 2.5</code><br>
+        <code>y = 5</code><br><br>
+        <code>print(type(x))</code><br>
+        <code>&lt;class 'float'&gt; # prints out in console</code><br><br>
+        <code>print(type(y))</code><br>
+        <code>&lt;class 'int'&gt; # prints out in console</code>
+      </div>
+
+      <h3>Numeric Operations</h3>
+      <p>Int and float values can be used to perform a wide range of <span class="keyword">mathematical functions</span>, he most basic of which can be carried out using <span class="keyword">operators</span>.</p>
+
+      <p>Int variables will remain int as long as the other(s) variables in the operation <span class="keyword">are also int</span>. The only time this doesn't hold true is if the answer is, by nature, a float. Otherwise, if <span class="keyword">any</span> of the variables are floats, the end result will also be a float.</p>
+
+      <div class="codeblock">
+        <h3>Operating On Float And Ints</h3>
+        <code>a = x + x</code><br><br>
+        <code>print(a, type(a))</code><br>
+        <code>5.0 &lt;class 'float'&gt; # prints out in console</code><br><br>
+        <code>b = y + y</code><br>
+        <code>print(b, type(b))</code><br>
+        <code>10 &lt;class 'int'&gt; # prints out in console</code><br><br>
+        <code>c = x + y</code><br>
+        <code>print(c, type(c))</code><br>
+        <code>7.5 &lt;class 'float'&gt; # prints out in console</code><br>
+      </div>
+
+      <h3>Other mathematical Operations:</h3>
+      <ul>
+        <li>Subtraction: <code>(x - y)</code></li>
+        <li>Multiplication: <code>(x * y)</code></li>
+        <li>Division: <code>(x / y)</code></li>
+        <li>Modulus: <code>(x % y)</code></li>
+        <li>Exponent: <code>(x ** y)</code></li>
+        <li>Floor Division*: <code>(x // y)</code></li>
+      </ul>
+      <p>All the above operations follow the same type interaction rules.</p>
+      <p>* - Normal division but all decimal values are dropped before returning.</p>
+      <hr>
+    </section>
+
+    <section class="main-section" id="Strings">
+      <header>
+        <h1>Strings</h1>
+      </header>
+
+      <h3>Strings vs Characters</h3>
+      <p>A character is used to represent any symbol <span class="keyword">as it looks</span> in your process. As a consequence, a character can be <span class="keyword">any</span> symbol - including numbers, spaces and operators.</p>
+
+      <p>A string is a <span class="keyword">collection</span> of character values pasted into <span class="keyword">one longer string</span>. There is no technical distinction between the two in Python: a character is a string that is one character long.</p>
+
+      <div class="codeblock">
+        <h3>Message</h3>
+        <code>message = "Hello World 2!!"</code><br><br>
+        <code>print(message, type(message))</code><br>
+        <code>Hello World 2!! &lt;class 'str'&gt; # prints out in console</code><br>
+      </div>
+
+      <h3>Operators On Strings</h3>
+      <p>Strings can be <span class="keyword">added</span> together and <span class="keyword">multiplied</span> with values using operators.</p>
+
+      <div class="codeblock">
+        <h3>Operating On Strings</h3>
+        <code>a = "Python"</code><br>
+        <code>b = " is easy."</code><br>
+        <code>c = a + b</code><br><br>
+        <code>print(c)</code><br>
+        <code>Python is easy. # prints out in console</code><br><br>
+        <code>d = a * 3</code><br><br>
+        <code>print(d)</code><br>
+        <code>PythonPythonPython # prints out in console</code>
+      </div>
+
+      <h3>Usage</h3>
+      <p>Strings are often used as user input or to denote qualitative values.</p>
+      <hr>
+    </section>
+
+    <section class="main-section" id="Lists">
+      <header>
+        <h1>Lists</h1>
+      </header>
+
+      <h3>Grouping Data</h3>
+      <p>Lists are used to store <span class="keyword">groups of data</span> in <span class="keyword">one</span> variable. Lists, however, <span class="keyword">aren't limited by data type</span>; they can store any and all data types <span class="keyword">within one instance</span>.</p>
+
+      <p>Lists can, in any one instance, carry <span class="keyword">as many</span> items in it as you like and have <span class="keyword">no limit</span> on the number of different data types it can hold. Lists can also <span class="keyword">be empty</span>. </p>
+
+      <div class="codeblock">
+        <h3>Initialising Lists</h3>
+        <code>emptyList = []</code><br>
+        <code>fullList = ["a", 2, "3+"]</code><br><br>
+        <code>print(type(emptyList), type(fullList))</code><br>
+        <code>&lt;class 'list'&gt; &lt;class 'list'&gt;</code>
+      </div>
+
+      <h3>Indexing Lists</h3>
+      <p>Lists are <span class="keyword">ordered</span> and therefore can be <span class="keyword">numerically indexed</span>. Every Every item in the list is assigned an <span class="keyword">ascending</span> number, starting at <span class="keyword">0</span>.</p>
+      <p>You can then use the index to retrieve the value at that index using <code>[]</code>.</p>
+
+      <div class="codeblock">
+        <h3>Retrieving Listed Items</h3>
+        <code>print(fullList[0])</code><br>
+        <code>a # prints out in console</code><br><br>
+        <code>print(fullList[1])</code><br>
+        <code>2 # prints out in console</code><br><br>
+        <code>print(fullList[2])</code><br>
+        <code>3+ # prints out in console</code><br>
+      </div>
+
+      <h3>Subsetting Lists</h3>
+      <p><code>[]</code> syntax can be used to retrieve multiple items in a list, returning desired items in <span class="keyword">list form</span>. Lists can be indexed using <span class="keyword">integers</span> or <span class="keyword">slices</span>. A <span class="keyword">slice</span> is used using <code>x:y</code> syntax - where x<sup>th</sup> is <span class="keyword">included</span> and y<sup>th</sup> value is <span class="keyword">excluded</span>.</p>
+
+      <div class="codeblock">
+        <h3>Subsetting Lists</h3>
+        <code>print(fullList[0:2])</code><br>
+        <code>["a", 2] # prints out in console</code><br>
+      </div>
+
+      <p><span class="keyword">Negative integers can be used</span> in slices and as indices and work in the same way. Using negative indices index the list <span class="keyword">from the end</span>.</p>
+
+      <div class="codeblock">
+        <h3>Negative indices</h3>
+        <code>print(fullList[-3:-2])</code><br>
+        <code>["a", 2] # prints out in console</code><br><br>
+        <code>print(fullList[-1])</code><br>
+        <code>["3+"] # prints out in console</code><br>
+      </div>
+
+      <p>Using indexing, you can also assign values at an index using assignment.</p>
+
+      <div class="codeblock">
+        <h3>List Assignment</h3>
+        <code>fullList[0] = "change"</code><br><br>
+        <code>print(fullList[0])</code><br>
+        <code>change # prints out in console</code><br>
+      </div>
+
+      <h3>Unique Properties</h3>
+
+      <p>As its own data type or <span class="keyword">class</span>, lists have <span class="keyword">properties</span> and <span class="keyword">methods</span>. These are built in attributes and capabilities that can be utilised by you, by virtue of being a list.</p>
+
+      <div class="codeblock">
+        <h3>Methods & Attributes</h3>
+        <code># Get the index of an item</code><br>
+        <code>print(fullList.index("change"))</code><br>
+        <code>0 # prints out in console</code><br><br>
+        <code># Add item onto a list</code><br>
+        <code>fullList.append("new")</code><br>
+        <code>print(fullList)</code>
+        <code>["change", 2, "3+", "new"] # prints out in console</code><br>
+      </div>
+
+      <p>There are many more methods and attributes available to lists which can be found <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">here</a>.</p>
+
+      <h3>Strings As Lists?</h3>
+      <p>Strings are very similar to lists: strings are essentially <span class="keyword">lists of characters</span>. They can therefore be indexed like lists and share some methods and attributes.</p>
+
+      <p>Strings do have their differences, mostly in how you <span class="keyword">mutate</span> them. Lists don't respond to the <code>+</code> or <code>*</code> operators and <span class="keyword">cannot</span> be mutated at an index. Strings are also <span class="keyword">hashable</span> where lists aren't.</p>
+
+      <div class="codeblock">
+        <h3>Strings vs Lists</h3>
+        <code>message = "String"</code><br>
+        <code>message2 = ["S", "t", "r", "i", "n", "g"]</code><br><br>
+        <code>message2[0] = "s" # message2 is ["s", "t", "r", "i", "n", "g"]</code><br>
+        <code>message[0] = "s" # Returns an error</code><br>
+      </div>
+
+      <p>Read more about their differences <a href="https://www.go4expert.com/articles/difference-strings-lists-python-t27973/">here</a>.</p>
+      <hr>
+    </section>
+
+    <section class="main-section" id="Dictionaries">
+      <header>
+        <h1>Dictionaries</h1>
+      </header>
+
+      <h3>Similar To Lists</h3>
+      <p>Dictionaries are a data type intended to hold  groups of data. Unlike lists, dictionaries (dicts) are <span class="keyword">unordered</span> and are indexed using a <span class="keyword">key - value</span> system. Every time an item is added to a dict, it is assigned a <span class="keyword">key</span> - which can be any data object that is <span class="keyword">hashable</span> (mainly strings or integers).</p>
+
+      <p>As a consequence, only use dicts when the <span class="keyword">order doesn't matter</span> to the process and you need to establish a <span class="keyword">specific relationship between the data</span> and a key - e.g. an id number with a name.</p>
+
+      <div class="codeblock">
+        <h3>Making A Dict</h3>
+        <code>emptyDict = {}</code><br>
+        <code>liverpool = {"Salah" : 11, "van Dijk" : 4, "Alisson" : 13}</code><br><br>
+        <code>print(type(liverpool))</code><br>
+        <code>&lt;class 'dict'&gt; # prints out to console</code>
+      </div>
+
+      <h3>Methods & Attributes</h3>
+
+      <p>Like all data types, dicts have their own specific methods and attributes - find them <a href="https://docs.python.org/3/library/stdtypes.html#mapping-types-dict" target="_blank">here</a>.</p>
+
+      <hr>
+    </section>
+
+    <section class="main-section" id="Booleans">
+      <header>
+        <h1>Booleans</h1>
+      </header>
+
+      <h3>True Or False</h3>
+      <p>Booleans are the virtual representation of the concept of true and false values.</p>
+
+      <div class="codeblock">
+        <h3>The 2 Booleans</h3>
+        <code>yes = True</code><br>
+        <code>no = False</code><br><br>
+        <code>print(yes, no)</code><br>
+        <code>True False # prints out to console</code><br><br>
+        <code>print(type(yes), type(no))</code><br>
+        <code>&lt;class 'bool'&gt; &lt;class 'bool'&gt; # prints out in console</code><br>
+      </div>
+
+      <p>A <span class="keyword">true</span> value would be anything of substance i.e. it is a <span class="keyword">real value</span> with <span class="keyword">real use</span>. A <span class="keyword">false</span> value is the opposite - something of <span class="keyword">no actual value</span> or an <span class="keyword">empty data</span> type.</p>
+
+      <p><span class="keyword">Mostly every value</span> is considered a<span class="keyword"> true value</span> except:</p>
+      <ul>
+        <li><code>None</code></li>
+        <li><code>False</code></li>
+        <li>Numeric zeros</li>
+        <li>Empty data structures i.e. lists or dicts</li>
+
+      </ul>
+
+      <p>Booleans mainly find use in <span class="keyword">conditionals</span>.</p>
+      <hr>
+    </section>
+
+    <section class="main-section" id="NoneTypes">
+      <header>
+        <h1>NoneTypes</h1>
+      </header>
+
+      <p>NoneType is the class of data which symbolises the <span class="keyword">opposite of value</span> - not 0, which is a value of nothing, but no value whatsoever.</p>
+
+      <p>An NoneType object has a value of <code>None</code> and is rarely used by the user.</p>
+      <hr>
+    </section>
+  </main>
+
+</body>
+</html>

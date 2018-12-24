@@ -1,0 +1,145 @@
+#cast {
+  background-color: black;
+  color: white;
+  background-image: url("https://i.redd.it/jvrweafq8da01.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vh rgba(0,0,0, 0.4);
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+@media (min-width: 980px) {
+  .roster {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 30%);
+    grid-gap: 1vh;
+    grid-template-areas:
+    "brian . title . dom"
+    "hobbs shaw han gisele tej"
+    "letty rome ramsey elena mia";
+    width: 68vw;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .roster img {
+    border-radius: 35px;
+    height: 20vh;
+    width: 20vh;
+    object-fit: cover;
+    margin: 0.5vw;
+  }
+}
+
+@media (max-width: 980px) {
+  .roster {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 20%);
+    grid-gap: 1vh;
+    grid-template-areas:
+    "title . . ."
+    "dom brian hobbs shaw"
+    "mia han gisele tej"
+    "letty rome ramsey elena";
+    width: 90%;
+    height: 90%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  .roster img {
+    border-radius: 35px;
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+    margin: 0.5vw;
+  }
+}
+
+@media (max-width: 475px) {
+  .roster {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(5, 18%);
+    grid-gap: 1vh;
+    grid-template-areas:
+    "title . ."
+    "dom brian hobbs"
+    "shaw mia han"
+    "gisele tej letty"
+    "rome ramsey elena";
+    width: 90%;
+    height: 85%;
+    margin-top: 5vh;
+  }
+
+  .roster img {
+    border-radius: 35px;
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+    margin: 0.5vw;
+    min-width: 77px;
+    height: 77px; 
+  }
+}
+
+.title {
+  grid-area: title;
+}
+
+.brian {
+  grid-area: brian;
+}
+
+.dom {
+  grid-area: dom;
+}
+
+.hobbs {
+  grid-area: hobbs;
+}
+
+.letty {
+  grid-area: letty;
+}
+
+.mia {
+  grid-area: mia;
+}
+
+.shaw {
+  grid-area: shaw;
+}
+
+.han {
+  grid-area: han;
+}
+
+.gisele {
+  grid-area: gisele;
+}
+
+.tej {
+  grid-area: tej;
+}
+
+.rome {
+  grid-area: rome;
+}
+
+.ramsey {
+  grid-area: ramsey;
+}
+
+.elena {
+  grid-area: elena;
+}

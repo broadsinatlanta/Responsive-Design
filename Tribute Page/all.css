@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
+body {
+  font-family: Cabin, arial;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, p, a {
+  padding: 3vw;
+  text-align: justify;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 55px;
+}
+
+#bottom-nav {
+  background-color: orange;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 47px;
+}
+
+#bottom-nav a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+#bottom-nav a:active, a:hover {
+  color: silver;
+}
+
+@media (max-width: 1325px) {
+  #icon {
+    font-size: 4vw;
+    color: white;
+  }
+}
+@media (min-width: 1325px) {
+  #icon {
+    font-size: 53px;
+    color: white;
+  }
+}
+@media (max-width: 515px) {
+  #icon {
+    font-size: 20px;
+    color: white;
+  }
+}

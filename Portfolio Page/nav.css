@@ -1,0 +1,27 @@
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  height: 5%;
+  width: 100%;
+  padding-top: 1.5vh;
+}
+
+#navbar a:link, a:visited {
+  text-decoration: none;
+  color: #F6E8EA;
+}
+
+#navbar a:hover {
+  animation-name: highlight;
+  animation-duration: 0.5s;
+  animation-delay: 0.05s;
+}
+
+@keyframes highlight {
+  50% {
+    transform: scale(1.1);
+    color: #EDCB96;
+  }
+}

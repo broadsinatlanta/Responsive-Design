@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+body {
+  font-family: Raleway;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0;
+  margin-left: 15vw;
+  width: 80vw;
+  padding: 10px;
+}
+
+hr {
+  width: 92.5%;
+  margin: 5vh;
+  border-color: #990000;
+}
+
+h1::first-letter {
+  color: #990000;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  display: inline-block;
+  width: 2em;
+  content: "\2022";
+  margin-left: -1em;
+  color: #990000;
+}
+
+.main-section {
+  text-align: justify;
+}
+
+.main-section a:link {
+  color: #990000;
+  text-decoration: none;
+}
+
+.main-section a:visited {
+  color: #5b0000;
+  text-decoration: line-through;
+}
+
+.main-section a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #990000;
+  border-radius: 25px;
+}

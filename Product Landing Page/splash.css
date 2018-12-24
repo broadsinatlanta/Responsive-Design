@@ -1,0 +1,149 @@
+.splash {
+  background-image: url("https://images.pexels.com/photos/586340/pexels-photo-586340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 85vh;
+  box-shadow: inset 0 0 0 100vh rgba(250, 250, 250, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Baloo;
+  color: #196CE9;
+  padding: 3vh 10px 10px 10px;
+  border-radius: 5px;
+}
+
+@media (max-height: 469px) {
+  .splash {
+    padding-top: 88px;;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7vh;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+@media (max-height: 635px) {
+  h1 {
+    font-size: 44px;
+  }
+}
+
+h3 {
+  font-size: 2vh;
+  text-align: center;
+}
+
+@media (max-height: 750px) {
+  h3 {
+    font-size: 15px;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input[type="email"] {
+  width: 35vw;
+  height: 2.5vh;
+  font-size: 2vh;
+  font-family: Baloo;
+  color: #196CE9;
+  border-radius: 10px;
+  padding: 1vw;
+  border: 1px solid rgba(250, 250, 250, 0.6);
+  transition: border-color 0.3s linear;
+}
+
+fieldset input[type="email"]:focus {
+  outline: none;
+  border: 2px solid #196CE9;
+}
+
+fieldset input[type="submit"] {
+  font-size: 2vh;
+  font-family: Baloo;
+  background-color: #196CE9;
+  color: white;
+  border-radius: 10px;
+  padding: 0.7vw;
+  border: 2px solid #196CE9;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  margin-left: 1vw;
+}
+
+fieldset input[type="submit"]:hover {
+  color: #196CE9;
+  background-color: white;
+}
+
+
+button {
+  margin-top: 10vh;
+  font-size: 3vh;
+  font-family: Baloo;
+  background-color: white;
+  color: #196CE9;
+  border: 2px solid #196CE9;
+  border-radius: 10px;
+  padding: 10px 50px;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  margin-left: 1vw;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #196CE9;
+  color: white;
+}
+
+@media (max-height: 765px) {
+  fieldset input[type="email"] {
+    height: 25px;
+    padding: 1vw;
+  }
+
+  fieldset input[type="submit"] {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}
+
+#submit {
+  animation-name: draw;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes draw {
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions iframe {
+  padding: 0;
+}

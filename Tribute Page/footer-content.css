@@ -1,0 +1,21 @@
+.content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#tribute-info {
+  height: 190vh;
+}
+
+#footer {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 5vh;
+  color: white;
+  height: 10%;
+}
+
+#footer h3 {
+  font-size: 15px;
+}
