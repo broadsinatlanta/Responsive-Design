@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="splash.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
 
   <!-- JS & JQuery import -->
   <script
@@ -21,9 +22,9 @@
 <body>
   <nav id="navbar">
     <a href="#welcome-section" id="top">Top</a>
-    <a href="#projects" id="projects">Projects</a>
-    <a href="#" id="contact">Contact</a>
-    <a href="https://github.com/broadsinatlanta" id="profile-link">GitHub</a>
+    <a href="#project-page" id="projects">Projects</a>
+    <a href="#contact-page" id="contact">Contact</a>
+    <a href="https://github.com/broadsinatlanta" id="profile-link" target="_blank">GitHub</a>
   </nav>
 
   <header>
@@ -39,16 +40,15 @@
 
   <main>
     <section id="projects">
-      <div class="page">
-        <div class="title">
+      <div class="page" id="project-page">
+        <div class="title project-title">
           <h1>Projects</h1>
         </div>
-
         <div class="choice">
           <div class="options left">
             <h1>Index</h1>
             <div class="skill-grid">
-              <h2>I'm Looking For...</h2>
+              <h2>I'm Looking For Skills In...</h2>
               <h3 id="html-css" class="skill html-css">HTML & CSS</a>
               <h3 id="js" class="skill js">Javascript</h3>
               <h3 id="python" class="skill python">Python</h3>
@@ -66,16 +66,16 @@
                 <a href="#" target="_blank">Champ Workout Generator</a>
               </div>
               <div class="project-tile surv html-css">
-                <a href="https://codepen.io/todaatsushi/pen/GPJpYv" target="_blank">Survey Form</a>
+                <a href="https://codepen.io/todaatsushi/full/GPJpYv" target="_blank">Survey Form</a>
               </div>
               <div class="project-tile dom r web-app data-vis data-analysis">
                 <a href="https://atsushitoda.shinyapps.io/dom_app" target="_blank">DOM</a>
               </div>
               <div class="project-tile land html-css">
-                <a href="https://codepen.io/todaatsushi/pen/JwXomY" target="_blank">Product Landing Page</a>
+                <a href="https://codepen.io/todaatsushi/full/JwXomY" target="_blank">Product Landing Page</a>
               </div>
               <div class="project-tile docs html-css">
-                <a href="https://codepen.io/todaatsushi/pen/aPpoMo" target="_blank">Technical Documentation Page</a>
+                <a href="https://codepen.io/todaatsushi/full/aPpoMo" target="_blank">Technical Documentation Page</a>
               </div>
               <div class="project-tile tsaf r web-app data-vis data-analysis">
                 <a href="https://atsushitoda.shinyapps.io/tsaf_app" target="_blank">TSAF</a>
@@ -84,14 +84,37 @@
                 <a href="https://atsushitoda.wordpress.com/portfolio/counting-the-counted/" target="_blank">Counting The Counted</a>
               </div>
               <div class="project-tile trib html-css">
-                <a href="https://codepen.io/todaatsushi/pen/WLeozz" target="_blank">Tribute Page</a>
+                <a href="https://codepen.io/todaatsushi/full/WLeozz" target="_blank">Tribute Page</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <section id="contact">
+      <div class="page" id="contact-page">
+        <div class="title contact-title">
+          <h1>Contact</h1>
+        </div>
+        <div class="choice">
+          <div class="options contact-main">
+            <h2>Thanks For Checking Out My Work!</h2>
+            <p>
+              You can expect a response within 48 hours.
+            </p>
+          </div>
+          <div class="options form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="text" name="company" placeholder="Company">
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" rows="8" cols="75" placeholder="Enter Your Message Here" required></textarea>
+              <input type="submit" name="submit" value="Send">
+            </form>
+          </div>
+        </div>
+    </section>
 
   </main>
 </body>

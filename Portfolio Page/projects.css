@@ -1,8 +1,14 @@
+#projects {
+  height: 100vh;
+  min-height: 800px;
+}
+
 .page {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .choice {
@@ -12,15 +18,17 @@
 }
 
 .title {
-  grid-area: title;
-  background-color: #8D3B72;
   height: 15%;
   width: 100%;
-  border: 10px solid #F6E8EA;
+  border: 10px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 75px;
+}
+
+.project-title {
+  background-color: #8D3B72;
 }
 
 .title h1 {
@@ -29,12 +37,19 @@
 
 .page {
   display: flex;
+
 }
 
 .options {
-  border: 10px solid #F6E8EA;
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+  align-items: center;
+  border: 10px solid white;
   width: 50%;
   height: 100%;
+  align-items: center;
+  padding: 5px;
 }
 
 .left {
@@ -42,25 +57,17 @@
 }
 
 .skill {
-  border: 3px solid #F6E8EA;
+  border: 3px solid white;
   padding: 10px;
   border-radius: 25px;
 }
 
 .skill:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .right {
   background-color: #EEB4B3;
-}
-
-.options {
-  display: flex;
-  flex-direction: column;
-  min-height: 625px;
-  align-items: center;
-  justify-content: center;
 }
 
 .project-grid {
@@ -76,7 +83,7 @@
   min-height: 75px;
   min-width: 75px;
   border-radius: 35px;
-  background-color: #F6E8EA;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +94,7 @@
 
 .project-tile a {
   text-decoration: none;
+  color: white;
 }
 
 @media (max-width: 750px) {
@@ -110,54 +118,54 @@
   background-image: url("Tribute Page.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .surv {
   background-image: url("Survey Form.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .land {
   background-image: url("Landing Page.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .docs {
   background-image: url("Documentation.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .champ {
   background-image: url("champ.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .tsaf {
   background-image: url("tsaf.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .dom {
   background-image: url("dom.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }
 
 .ctc {
   background-image: url("CTC.png");
   background-position: center;
   background-size: cover;
-  background-color: #F6E8EA;
+  background-color: white;
 }

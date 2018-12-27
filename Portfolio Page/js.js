@@ -4,7 +4,7 @@ jQuery(function($) {
 
     // Change borders of html/css on, rest off
     $(".project-grid").find(".html-css").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".html-css").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".html-css").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".html-css").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".html-css").css("border", "3px solid #F6E8EA");
@@ -14,7 +14,7 @@ jQuery(function($) {
 
     // Change borders of python on, rest off
     $(".project-grid").find(".python").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".python").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".python").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".python").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".python").css("border", "3px solid #F6E8EA");
@@ -24,7 +24,7 @@ jQuery(function($) {
 
     // Change borders of javascript on, rest off
     $(".project-grid").find(".js").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".js").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".js").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".js").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".js").css("border", "3px solid #F6E8EA");
@@ -34,7 +34,7 @@ jQuery(function($) {
 
     // Change borders of web apps on, rest off
     $(".project-grid").find(".web-app").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".web-app").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".web-app").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".web-app").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".web-app").css("border", "3px solid #F6E8EA");
@@ -44,7 +44,7 @@ jQuery(function($) {
 
     // Change borders of data analysis on, rest off
     $(".project-grid").find(".data-analysis").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".data-analysis").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".data-analysis").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".data-analysis").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".data-analysis").css("border", "3px solid #F6E8EA");
@@ -54,7 +54,7 @@ jQuery(function($) {
 
     // Change borders of r on, rest off
     $(".project-grid").find(".r").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".r").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".r").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".r").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".r").css("border", "3px solid #F6E8EA");
@@ -64,7 +64,7 @@ jQuery(function($) {
 
     // Change borders of data visualisation on, rest off
     $(".project-grid").find(".data-vis").css("border", "3px solid #89023E");
-    $(".project-grid").find(".project-tile").not(".data-vis").css("border", "none");
+    $(".project-grid").find(".project-tile").not(".data-vis").css("border", "3px solid rgba(0,0,0, 0.7)");
 
     $(".skill-grid").find(".data-vis").css("border", "3px solid #89023E");
     $(".skill-grid").find(".skill").not(".data-vis").css("border", "3px solid #F6E8EA");
